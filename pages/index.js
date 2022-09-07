@@ -8,7 +8,8 @@ export default function Home({ products }) {
 	return (
 		<div className=''>
 			<Head>
-				<title>Shopify eCommerce Store</title>
+				{/* title on page tab */}
+				<title>doggo eCommerce Store</title>
 				<meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
 				<meta
 					httpEquiv='Content-Type'
