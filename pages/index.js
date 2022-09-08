@@ -35,11 +35,11 @@ export default function Home({ products }) {
 		</div>
 	);
 }
-
+// makes the website rebuild when new products are added
 export async function getStaticProps() {
 	const products = await getProductsInCollection();
 
 	return {
-		props: { products },
+		props: { products }, // will be passed to the page component as props
 	};
 }
