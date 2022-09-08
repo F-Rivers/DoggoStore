@@ -5,31 +5,41 @@ import Hero from "../components/Hero";
 import Head from "next/head";
 
 export default function Home({ products }) {
-  return (
-    <div className="">
-      <Head>
-        <title>Shopify eCommerce Store</title>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-        <meta name="description" content="Modern eCommerce Store for purchasing heavy equipment, built using Next.js, Shopify, and TailwindCSS."/>
-        <meta property="og:title" content="Shopify eCommerce Store" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.myroute.dev" />
-        <meta property="og:image" content="https://www.myroute.dev/share.png" />
-        <meta property="og:description" content="Modern eCommerce Store for purchasing heavy equipment, built using Next.js, Shopify, and TailwindCSS. Additonal topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps, and much much more!" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Shopify eCommerce Store" />
-      </Head>
-      <Hero />
-      <ProductList products={products} />
-    </div>
-  );
+	return (
+		<div className=''>
+			<Head>
+				{/* title on page tab */}
+				<title>doggo eCommerce Store</title>
+				<meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+				<meta
+					httpEquiv='Content-Type'
+					content='text/html; charset=ISO-8859-1'
+				/>
+				<meta
+					name='description'
+					content='Modern eCommerce Store for purchasing heavy equipment, built using Next.js, Shopify, and TailwindCSS.'
+				/>
+				<meta property='og:title' content='Shopify eCommerce Store' />
+				<meta property='og:type' content='website' />
+				<meta property='og:url' content='https://www.myroute.dev' />
+				<meta property='og:image' content='https://www.myroute.dev/share.png' />
+				<meta
+					property='og:description'
+					content='Modern eCommerce Store for purchasing heavy equipment, built using Next.js, Shopify, and TailwindCSS. Additonal topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps, and much much more!'
+				/>
+				<meta property='og:locale' content='en_US' />
+				<meta property='og:site_name' content='Shopify eCommerce Store' />
+			</Head>
+			<Hero />
+			<ProductList products={products} />
+		</div>
+	);
 }
-
+// makes the website rebuild when new products are added
 export async function getStaticProps() {
-  const products = await getProductsInCollection();
+	const products = await getProductsInCollection();
 
-  return {
-    props: { products },
-  };
+	return {
+		props: { products }, // will be passed to the page component as props
+	};
 }
