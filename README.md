@@ -25,3 +25,8 @@ Why the Shopify/Next.js/Tailwind CSS tech stack?
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 npm run dev
 ```
+
+# Deployment Fix
+
+deployment settings on Vercel was stringifying a string, leading to a failure to
+fetch products. fixed by deleting quotes on environmental variables
