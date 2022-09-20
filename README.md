@@ -2,6 +2,9 @@
 
 https://franks-teststore.myshopify.com/
 
+created product categories for bed, bowl, collar, leash, brush, and harness
+created products for each category created products for dogs and cats
+
 ## 500 error
 
 https://rmdevs.com/performance/shopping/summary [13:54:44] LOG.error: Undefined
@@ -89,3 +92,8 @@ add the following script in package.json
 
 - create a file named [_ _ tests_ _] (no spaces)
 - add tests
+
+# To-Do
+
+- add comments to ./pages
+- add icon to page tab
