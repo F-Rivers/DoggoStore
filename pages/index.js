@@ -8,8 +8,8 @@ export default function Home({ products }) {
 	return (
 		<div className=''>
 			<Head>
-				{/* title on page tab */}
-				<title>doggo store</title>
+				{/* title on page tab, need to add brand icon */}
+				<title>doggo</title>
 				<meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
 				<meta
 					httpEquiv='Content-Type'
@@ -17,7 +17,7 @@ export default function Home({ products }) {
 				/>
 				<meta
 					name='description'
-					content='Modern eCommerce Store for purchasing Dog and Cat products, built using Next.js, Shopify, and TailwindCSS.'
+					content='An eCommerce Store for purchasing Pet products, built using Next.js, Shopify, and TailwindCSS.'
 				/>
 				<meta property='og:title' content='Shopify eCommerce Store' />
 				<meta property='og:type' content='website' />
@@ -25,7 +25,7 @@ export default function Home({ products }) {
 				<meta property='og:image' content='https://www.myroute.dev/share.png' />
 				<meta
 					property='og:description'
-					content='Modern eCommerce Store for purchasing Dog and Cat products, built using Next.js, Shopify, and TailwindCSS. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps, and more'
+					content='An eCommerce Store for purchasing Pet products, built using Next.js, Shopify, and TailwindCSS. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps, and HeadlessUI'
 				/>
 				<meta property='og:locale' content='en_US' />
 				<meta property='og:site_name' content='Shopify eCommerce Store' />
@@ -41,6 +41,7 @@ export async function getStaticProps() {
 	const products = await getProductsInCollection();
 
 	return {
-		props: { products }, // will be passed to the page component as props
+		// will be passed to the page component as props
+		props: { products },
 	};
 }
