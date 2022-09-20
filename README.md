@@ -30,3 +30,62 @@ npm run dev
 
 deployment settings on Vercel was stringifying a string, leading to a failure to
 fetch products. fixed by deleting quotes on environmental variables
+
+# Testing
+
+## Resources
+
+https://nextjs.org/docs/testing#jest-and-react-testing-library
+
+## Step 1
+
+Run terminal command:
+
+```
+npm install --save-dev jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom
+```
+
+## Step 2
+
+create a file in the root named jest.config.js add the following:
+
+```js
+// jest.config.js
+const nextJest = require("next/jest");
+
+const createJestConfig = nextJest({
+	// Provide the path to your Next.js app to load next.config.js and .env files in your test environment
+	dir: "./",
+});
+
+// Add any custom config to be passed to Jest
+/** @type {import('jest').Config} */
+const customJestConfig = {
+	// Add more setup options before each test is run
+	// setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+	// if using TypeScript with a baseUrl set to the root directory then you need the below for alias' to work
+	moduleDirectories: ["node_modules", "<rootDir>/"],
+	testEnvironment: "jest-environment-jsdom",
+};
+
+// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
+module.exports = createJestConfig(customJestConfig);
+```
+
+## Step 3
+
+add the following script in package.json
+
+```
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "test": "jest --watch"
+}
+```
+
+## Step 4
+
+- create a file named [_ _ tests_ _] (no spaces)
+- add tests

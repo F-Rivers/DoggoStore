@@ -9,7 +9,7 @@ export default function Home({ products }) {
 		<div className=''>
 			<Head>
 				{/* title on page tab */}
-				<title>doggo eCommerce Store</title>
+				<title>doggo store</title>
 				<meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
 				<meta
 					httpEquiv='Content-Type'
@@ -17,7 +17,7 @@ export default function Home({ products }) {
 				/>
 				<meta
 					name='description'
-					content='Modern eCommerce Store for purchasing heavy equipment, built using Next.js, Shopify, and TailwindCSS.'
+					content='Modern eCommerce Store for purchasing Dog and Cat products, built using Next.js, Shopify, and TailwindCSS.'
 				/>
 				<meta property='og:title' content='Shopify eCommerce Store' />
 				<meta property='og:type' content='website' />
@@ -25,7 +25,7 @@ export default function Home({ products }) {
 				<meta property='og:image' content='https://www.myroute.dev/share.png' />
 				<meta
 					property='og:description'
-					content='Modern eCommerce Store for purchasing heavy equipment, built using Next.js, Shopify, and TailwindCSS. Additonal topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps, and much much more!'
+					content='Modern eCommerce Store for purchasing Dog and Cat products, built using Next.js, Shopify, and TailwindCSS. Additional topics include Storefront API, Static Site Generation, getStaticPaths, getStaticProps, and more'
 				/>
 				<meta property='og:locale' content='en_US' />
 				<meta property='og:site_name' content='Shopify eCommerce Store' />
@@ -36,6 +36,7 @@ export default function Home({ products }) {
 	);
 }
 // makes the website rebuild when new products are added
+// 09-19-22: not updating or not updating quickly (I reset the deployment in order to get the changes to sync)
 export async function getStaticProps() {
 	const products = await getProductsInCollection();
 
