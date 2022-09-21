@@ -97,3 +97,4 @@ add the following script in package.json
 
 - add comments to ./pages
 - add icon to page tab
+- find out how to fix shopify app error "page does not exist"

@@ -24,6 +24,7 @@ export default async function available(req, res) {
 			body: JSON.stringify({ query }),
 		};
 
+		// if 'products cannot be fetched' console.log this try-catch method for help with errors
 		try {
 			const data = await fetch(URL, options).then((response) => {
 				return response.json();
@@ -34,7 +35,9 @@ export default async function available(req, res) {
 		}
 	}
 
+	// add async testing for getProduct
 	async function getProduct(handle) {
+		// gives the search input for the graphql shopify app
 		const query = `
     {
       productByHandle(handle: "${handle}") {
@@ -51,16 +54,12 @@ export default async function available(req, res) {
     }`;
 
 		const response = await ShopifyData(query);
-
 		const product = response.data.productByHandle
 			? response.data.productByHandle
 			: [];
-
 		return product;
 	}
-
 	const products = await getProduct(id);
-
 	res.status(200);
 	res.json(products);
 }
