@@ -97,3 +97,11 @@ add the following script in package.json
 
 - add comments to ./pages
 - add icon to page tab
+
+# Git Maintenance
+
+to update remote branches
+
+```
+git remote update origin --prune
+```
