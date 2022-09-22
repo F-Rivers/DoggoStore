@@ -6,6 +6,7 @@ const Hero = () => {
 		<div className='my-48 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-72 text-center'>
 			<h1 className='font-extrabold text-black'>
 				<p className='text-xl sm:text-6xl md:text-7xl'>DogGo</p>
+				{/* add gradient from -blue to next theme color  */}
 				<p className='text-transparent bg-clip-text text-darkblue text-4xl sm:text-3xl md:text-4xl'>
 					The store for pets.
 				</p>
