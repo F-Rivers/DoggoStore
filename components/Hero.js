@@ -17,13 +17,13 @@ const Hero = () => {
 			<div className='mt-5 max-w-md mx-auto flex justify-center items-center md:mt-8'>
 				<Link href='#'>
 					{/* add link for sign up page */}
-					<a className='inline-flex items-center justify-center h-12 px-6 mr-6 font-medium py-3 border-transparent rounded-md text-white bg-gray-light hover:bg-blue'>
+					<a className='inline-flex items-center justify-center h-12 px-6 mr-6 font-medium py-3 border-transparent rounded-md text-black bg-graylight hover:bg-blue'>
 						Sign Up
 					</a>
 				</Link>
 				<Link href='#'>
 					{/* add link for sign in */}
-					<a className='inline-flex items-center font-semibold text-black hover:text-blue'>
+					<a className='inline-flex items-center font-semibold h-12 px-6 mr-6 py-3 border-transparent rounded-md text-black hover:text-blue hover:bg-graylight'>
 						Sign In
 					</a>
 				</Link>

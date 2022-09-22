@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
 	return (
 		<Link href={`/products/${handle}`}>
 			<a className='group'>
-				<div className='w-full bg-gray rounded-3xl overflow-hidden'>
+				<div className='w-full bg-black rounded-3xl overflow-hidden'>
 					<div className='relative group-hover:opacity-75 h-72'>
 						<Image
 							src={originalSrc}
@@ -20,8 +20,8 @@ const ProductCard = ({ product }) => {
 						/>
 					</div>
 				</div>
-				<h3 className='mt-4 text-lg font-medium text-gray'>{title}</h3>
-				<p className='mt-1 text-small text-gray'>{formatter.format(price)}</p>
+				<h3 className='mt-4 text-lg font-medium text-black'>{title}</h3>
+				<p className='mt-1 text-small text-black'>{formatter.format(price)}</p>
 			</a>
 		</Link>
 	);
