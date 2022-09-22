@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/Home.module.css";
 // old version
 // import "swiper/swiper.scss";
 // import "swiper/components/navigation/navigation.scss";
