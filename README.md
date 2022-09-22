@@ -97,6 +97,7 @@ add the following script in package.json
 
 - add comments to ./pages
 - add icon to page tab
+- add conditional screen rendering for cards
 
 # Git Maintenance
 
@@ -105,3 +106,7 @@ to update remote branches
 ```
 git remote update origin --prune
 ```
+
+# styling
+
+-
