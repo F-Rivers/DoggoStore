@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
 	return (
-		// implements the tailwind screen size parameters
+		// class names implement the tailwind screen size parameters, colors, and font from tailwind.config.js
 		<div className='my-48 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-72 text-center'>
 			<h1 className='font-extrabold text-black'>
 				<p className='text-xl sm:text-6xl md:text-7xl'>DogGo</p>

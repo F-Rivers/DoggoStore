@@ -98,6 +98,7 @@ add the following script in package.json
 - add comments to ./pages
 - add icon to page tab
 - add conditional screen rendering for cards
+- navbar transparency issue
 
 # Git Maintenance
 
