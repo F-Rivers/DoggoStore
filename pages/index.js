@@ -39,46 +39,6 @@ export default function Home({ products }) {
 				<Hero />
 				<ProductList products={products} />
 			</div>
-
-			{/* creates the dark mode toggle */}
-			<div
-				className={`h-screen w-full flex items-center justify-center bg-gray flex-col ${
-					darkToggle && "dark"
-				}`}
-			>
-				{/* creates the checkbox that when checked, overrides the current css and implements the 'dark:' class */}
-				<label className='toggleDarkBtn flex items-center justify-center'>
-					<input type='checkbox' onClick={() => setDarkToggle(!darkToggle)} />
-					<div className='text-black dark:text-white font-bold'>Dark Mode</div>
-					<span className='slideBtnTg round'></span>
-				</label>
-				<div className='max-w-sm rounded overflow-hidden bg-gray p-5 mt-4 text-white dark:bg-graydark'>
-					{/* <img
-						className='w-full'
-						src='https://v1.tailwindcss.com/img/card-top.jpg'
-						alt='Sunset in the mountains'
-					/> */}
-					{/* random text to test the color change */}
-					<div className='px-6 py-4'>
-						<div className='text-black dark:text-white font-bold text-xl mb-2'>
-							The Coldest Sunset
-						</div>
-						{/* random text to test the color change */}
-
-						<p className='text-white dark:text-sky'>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Voluptatibus quia, nulla! Maiores et perferendis eaque,
-							exercitationem praesentium nihil.
-						</p>
-					</div>
-					{/* random text to test the color change */}
-					<div classNamw='px-6 pt-4 pb-2'>
-						<span className='inline-block bg-gray rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-							#photography
-						</span>
-					</div>
-				</div>
-			</div>
 		</>
 	);
 }

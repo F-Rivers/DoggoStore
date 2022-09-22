@@ -1,6 +1,6 @@
 @import url("Home.module.css");
 .toggleDarkBtn {
-  position: sticky;
+  position: top;
   display: inline-block;
   width: 65px;
   height: 41px;
