@@ -5,12 +5,14 @@ module.exports = {
 		"./components/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
+		// creates the screen parameters for the 4 responsive breakpoints
 		screens: {
 			sm: "480px",
 			md: "768px",
 			lg: "976px",
 			xl: "1440px",
 		},
+		// creates the names for  the global color palette
 		colors: {
 			blue: "#1fb6ff",
 			darkblue: "#1e40af",
