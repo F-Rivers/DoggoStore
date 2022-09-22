@@ -110,4 +110,8 @@ git remote update origin --prune
 
 # styling
 
--
+## dark mode
+
+https://tailwindcss.com/docs/dark-mode
+
+added light blue hover text to give the dark mode more styling

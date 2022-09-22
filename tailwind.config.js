@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	darkMode: "class",
+	// routes the content files for .config to interpret
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
+		"./styles/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
-		// creates the screen parameters for the 4 responsive breakpoints
+		// creates the screen pixel parameters for the 4 responsive breakpoints
 		screens: {
 			sm: "480px",
 			md: "768px",
@@ -14,6 +17,8 @@ module.exports = {
 		},
 		// creates the names for  the global color palette
 		colors: {
+			black: "#0f172a",
+			sky: "#f0f9ff",
 			blue: "#1fb6ff",
 			darkblue: "#1e40af",
 			purple: "#7e5bef",
@@ -21,9 +26,10 @@ module.exports = {
 			orange: "#ff7849",
 			green: "#13ce66",
 			yellow: "#ffc82c",
-			"gray-dark": "#273444",
+			graydark: "#273444",
 			gray: "#8492a6",
-			"gray-light": "#d3dce6",
+			graylight: "#d3dce6",
+			white: "#f8fafc",
 		},
 		fontFamily: {
 			sans: ["Graphik", "sans-serif"],
