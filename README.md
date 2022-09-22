@@ -110,4 +110,6 @@ git remote update origin --prune
 
 # styling
 
--
+## dark mode
+
+https://tailwindcss.com/docs/dark-mode
