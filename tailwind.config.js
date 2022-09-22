@@ -14,6 +14,8 @@ module.exports = {
 		},
 		// creates the names for  the global color palette
 		colors: {
+			black: "#0f172a",
+			sky: "#f0f9ff",
 			blue: "#1fb6ff",
 			darkblue: "#1e40af",
 			purple: "#7e5bef",
