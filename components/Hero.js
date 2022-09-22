@@ -1,6 +1,6 @@
 import Link from "next/link";
-import "../styles/Home.module.css";
 import React from "react";
+import "../styles/Home.module.css";
 
 const Hero = () => {
 	const [darkToggle, setDarkToggle] = React.useState(false);
@@ -13,9 +13,10 @@ const Hero = () => {
 			>
 				{/* the toggle overrides the current css and reads the class 'dark:' instead */}
 				<label className='toggleDarkBtn flex items-center'>
+					{/* this button lives next to the hero card */}
 					<input type='checkbox' onClick={() => setDarkToggle(!darkToggle)} />
 					<div className='text-black dark:text-white font-bold'>Dark Mode</div>
-					{/* <span className='slideBtnTg round'></span> */}
+					<span className='slideBtnTg round'></span>
 				</label>
 
 				{/* // class names implement the tailwind screen size parameters, colors, and font from tailwind.config.js */}
@@ -24,7 +25,7 @@ const Hero = () => {
 						darkToggle && "dark"
 					}`}
 				>
-					<h1 className='font-extrabold text-black'>
+					<h1 className='font-extrabold text-black text-center'>
 						<p className='text-xl sm:text-6xl md:text-7xl dark:text-sky'>
 							DogGo
 						</p>
