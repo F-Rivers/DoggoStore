@@ -115,3 +115,14 @@ git remote update origin --prune
 https://tailwindcss.com/docs/dark-mode
 
 added light blue hover text to give the dark mode more styling
+
+# Error: undefined node
+
+## error:
+
+TypeError: cannot read properties of undefined (reading .node)
+
+## solution:
+
+updated shopify store with new pictures and details, somehow fixed the problem,
+don't know why yet
