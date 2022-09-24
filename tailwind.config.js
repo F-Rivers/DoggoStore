@@ -30,6 +30,7 @@ module.exports = {
 			gray: "#8492a6",
 			graylight: "#d3dce6",
 			white: "#f8fafc",
+			red: "#b91c1c",
 		},
 		fontFamily: {
 			sans: ["Graphik", "sans-serif"],
@@ -45,5 +46,8 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/aspect-ratio")],
+	corePlugins: {
+		aspectRatio: false,
+	},
 };
