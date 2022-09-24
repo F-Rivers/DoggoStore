@@ -11,12 +11,12 @@ const ProductList = ({ products }) => {
 					darkToggle && "dark"
 				}`}
 			>
-				<lable className='toggleDarkBtn flex items-center'>
+				<label className='toggleDarkBtn flex items-center'>
 					{/* this button lives on top of the products card */}
-					<input type='checkbox' onClick={() => setDarkToggle(!darkToggle)} />
+					{/* useEffect () => setDarkToggle(!darkToggle)} */}
 					<div className='text-black dark:text-white font-bold'>Dark Mode</div>
 					<span className='slideBtnTg round'></span>
-				</lable>
+				</label>
 
 				<div className='h-full w-full items-center justify-center bg-blue  dark:bg-graydark'>
 					<h2 className='text-2xl font-extrabold text-black mb-6 dark:text-sky'>

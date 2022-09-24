@@ -7,8 +7,7 @@ const ProductCard = ({ product }) => {
 	const { handle, title } = product.node;
 	const { altText, originalSrc } = product.node.images.edges[0].node;
 	const price = product.node.priceRange.minVariantPrice.amount;
-	const [darkToggle, setDarkToggle] = React.useState(false);
-
+	// const [darkToggle, setDarkToggle] = React.useState(false);
 	return (
 		<>
 			<div className='bg-sky dark:bg-gray text-center'>
